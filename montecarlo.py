@@ -31,7 +31,7 @@ from compare_plot_saver import save_compare_plots  # noqa: E402
 
 #-------------------------------------------------------------------------------------------------------- PARAMETERS
 # Name of the output folder (can be a new folder or an existing one to overwrite)
-output_dir_name = 'prova'
+output_dir_name = '0_baseline'
 number_of_simulations = 200
 weather_data = 'c'          # c = custom (mean EuRoC week), e = ensemble, f = forecast (Open-Meteo, FORECAST_MODEL in atlas_model.py), i = ISA
 seed = None                 # integer to repeat exactly the same runs
@@ -40,9 +40,9 @@ multiple_core = True        # True = runs in parallel on all the cores, False = 
 # OPTIONS:
 ballistic = False           # True = flight without parachutes
 show_dispersion_plot = False
-save_dispersion_plot = False
+save_dispersion_plot = True
 show_compare_plot = False
-save_compare_plot = False
+save_compare_plot = True
 sensitivity_analysis = False
 #--------------------------------------------------------------------------------------------------------
 
@@ -531,16 +531,16 @@ def main():
             save_compare_plots(
                 comparison_object=comparison,
                 plots=[
-                    ("velocities", {"legend": False}),
+                    #("velocities", {"legend": False}),
                     ("accelerations", {"legend": False}),
-                    ("attitude_angles", {"legend": False}),
-                    ("euler_angles", {"legend": False}),
+                    #("attitude_angles", {"legend": False}),
+                    #("euler_angles", {"legend": False}),
                     ("aerodynamic_forces", {"legend": False}),
-                    ("aerodynamic_moments", {"legend": False}),
-                    ("angular_velocities", {"legend": False}),
-                    ("trajectories_3d", {}),
-                    ("rail_buttons_forces", {"legend": False}),
-                    ("stability_margin", {"legend": False}),
+                    #("aerodynamic_moments", {"legend": False}),
+                    #("angular_velocities", {"legend": False}),
+                    #("trajectories_3d", {}),
+                    #("rail_buttons_forces", {"legend": False}),
+                    #("stability_margin", {"legend": False}),
                 ],
                 output_dir=output_comparison,
                 formats=["svg","pickle"], 
