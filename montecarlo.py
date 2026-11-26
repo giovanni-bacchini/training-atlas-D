@@ -31,7 +31,7 @@ from compare_plot_saver import save_compare_plots  # noqa: E402
 
 #-------------------------------------------------------------------------------------------------------- PARAMETERS
 # Name of the output folder (can be a new folder or an existing one to overwrite)
-output_dir_name = '0_baseline'
+output_dir_name = '1_geometria_v1.8'
 number_of_simulations = 200
 weather_data = 'c'          # c = custom (mean EuRoC week), e = ensemble, f = forecast (Open-Meteo, FORECAST_MODEL in atlas_model.py), i = ISA
 seed = None                 # integer to repeat exactly the same runs

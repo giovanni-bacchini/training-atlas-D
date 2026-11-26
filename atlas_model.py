@@ -22,7 +22,7 @@ import numpy as np
 import pandas as pd
 
 #-------------------------------------------------------------------------------------------------------- VERSIONS
-GEOMETRY = "v1.6"                                   # simulation_inputs/geometry_data/<version>/
+GEOMETRY = "v1.8"                                   # simulation_inputs/geometry_data/<version>/
 AERODYNAMICS = "v1.4/CD_Mach_Test_Atlas_v_1.2_SDRAD_cd_mach.csv"         # simulation_inputs/aerodynamic_data/rocket_body/<file>
 MOTOR = "SRAD/v1.0"             # simulation_inputs/propulsion_data/<motor>/
 RECOVERY = "v1.0"                                   # simulation_inputs/recovery_data/<version>/
